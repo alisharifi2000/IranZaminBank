@@ -1,0 +1,18 @@
+CREATE TABLE loan (
+    id int NOT NULL IDENTITY(1,1),
+    customer_id varchar(12),
+    deposit_id varchar(12),
+    loan_id varchar(50) NOT NULL PRIMARY KEY,
+    loan_type int,
+    deposit_type int,
+    deposit_balance float,
+    loan_balance float,
+    wage float,
+    repayment_period int,
+    interest float,
+    repayment_method int,
+    penalty float,
+    guarantee_amount float,
+    loan_file_no varchar(25),
+    guarantees_confirmation bit,
+    blocked_amount float);
